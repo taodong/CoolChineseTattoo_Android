@@ -1,0 +1,101 @@
+// Let's start with the basics
+$base-color: #333;
+$active-color: #ff8100;
+$base-gradient: 'flat';
+
+// Buttons
+$button-gradient: 'bevel';
+
+// Lists
+$list-bg-color: #eee;
+$list-color: #333;
+$list-pressed-color: #ddd;
+$list-active-gradient: 'recessed';
+$list-header-bg-color: #999;
+$list-header-gradient: 'bevel';
+
+// Tabs
+$tabs_dark_color: #000;
+
+@import 'sencha-touch/default/all';
+
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+// @include sencha-picker;
+// @include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+// @include sencha-carousel;
+// @include sencha-indexbar;
+@include sencha-list;
+// @include sencha-list-paging;
+// @include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner; 
+
+@include pictos-iconmask('info');
+@include pictos-iconmask('download');
+@include pictos-iconmask('warning_black');
+@include pictos-iconmask('search');
+@include pictos-iconmask('home');
+
+.x-toolbar .x-toolbar-title {
+    color: #CFCFCF;
+    text-shadow: rgba(#fff, .8) 0 1px 20px;
+    font-size: 90%;
+}
+
+.x-button .x-button-label {
+    color: #CFCFCF;
+} 
+
+.x-form .x-panel-body {
+    // background-color: #F5F5EA !important;
+}
+
+#words_blk {
+    text-align: center;
+    
+    h3 {
+        font-size: 90%;
+        color: #75727C;
+    };
+    
+    ul {
+        display: inline;
+        width: 100%;
+
+        li {
+            float: left;
+            width: 50%;
+            height: 65px !important;
+            // border: 1px solid blue !important;
+            a {
+                padding-top: 15px !important;
+                text-decoration: none;
+                color: #222;
+                font-size: 100%;
+                font-weight: bolder;
+            }
+        }
+    }
+    
+}
+
+#tt_block {
+    text-align: center;
+    
+    p {
+        font-size: 150%;
+        font-weight: bolder;
+    }
+}
+
+#mebtn.x-button .x-button-label,
+#mpbtn.x-button .x-button-label,
+{
+    font-size: 65%;
+}
